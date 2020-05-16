@@ -2,6 +2,29 @@ doctype=html
 html
   head
     title strona
-    link(rel="stylesheet", href="/public/styles.css")
+    link(rel="stylesheet", href="../public/styles.css")
+    link(href="https://fonts.googleapis.com/css2?family=Hind:wght@600&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet")
   body
-    h1 hii
+    .main-1
+      .title1 Obszary naszych kompetencji
+      .text1 Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.
+      .circle
+        img(src="../img/circle.png")
+        .centered-text POZNAJ NASZE KOMPETENCJE
+      .circle-item
+    .main-2
+      .title2 Skontaktuj się z nami
+      .text2 Zadzwoń #[span +48 535 015 835] lub wypełnij formularz.
+      form
+        .row
+          input(type="text" placeholder="Imię i nazwisko")
+          input(type="text" placeholder="Telefon")
+          input(type="text" placeholder="E-mail")
+        .row
+          input(type="text" placeholder="Firma")
+          input(type="number" placeholder="Ilość pracowników")
+          input(type="number" placeholder="Roczny dochód firmy" min="0")
+        .row
+          input(type="text" id="message" placeholder="Wiadomość")
+      input(type="checkbox") Zapoznałem(-łam) się z #[a(href="#") Polityką prywatności] oraz z #[a(href="#") Zastrzeżeniami prawnymi]
+      .button WYŚLIJ

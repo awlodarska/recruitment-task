@@ -1,5 +1,91 @@
 body {
-  background: red; }
-
-h1 {
-  color: blue; }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
+  body .main-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .main-1 .title1 {
+      font-family: 'Hind', sans-serif;
+      font-weight: 600;
+      font-size: 36px;
+      color: #2f2f2f;
+      margin-top: 70px;
+      margin-bottom: 40px; }
+    body .main-1 .text1 {
+      font-size: 16px;
+      color: #565e66;
+      font-weight: 400; }
+    body .main-1 .circle {
+      position: relative;
+      padding: 120px; }
+      body .main-1 .circle .centered-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff; }
+    body .main-1 .circle-item {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: rotate(45deg) translate(12em) rotate(-45deg);
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      background-color: #f4f7f9;
+      border: solid 3px #d4dbe0; }
+  body .main-2 {
+    background-image: url("../img/background.jpg");
+    width: 100%;
+    height: 642px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    body .main-2 .title2 {
+      font-family: 'Hind', sans-serif;
+      font-weight: 600;
+      color: #fff;
+      font-size: 36px;
+      margin-top: 90px; }
+    body .main-2 .text2 {
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400; }
+      body .main-2 .text2 span {
+        font-weight: 700; }
+    body .main-2 form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column; }
+      body .main-2 form input {
+        width: 305px;
+        height: 50px;
+        padding-left: 10px;
+        color: #565e66;
+        margin: 5px; }
+      body .main-2 form #message {
+        width: 945px;
+        height: 124px; }
+    body .main-2 .box {
+      width: 17px;
+      height: 17px;
+      background-color: #fff; }
+    body .main-2 p {
+      color: #fff; }
+      body .main-2 p a {
+        color: #35a8e0;
+        text-decoration: none; }
+    body .main-2 .button {
+      color: #fff;
+      font: 14px;
+      background-color: #35a8e0;
+      width: 163px;
+      height: 52px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
