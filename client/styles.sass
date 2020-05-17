@@ -4,48 +4,103 @@ body
   box-sizing: border-box
   font-family: 'Roboto', sans-serif
 
-  .main-1
+  .main
     display: flex
     flex-direction: column
     align-items: center
 
-    .title1
+    .main-title
       font-family: 'Hind', sans-serif
       font-weight: 600
       font-size: 36px
       color: #2f2f2f
-      margin-top: 70px
-      margin-bottom: 40px
+      margin-top: 50px
+      margin-bottom: 10px
 
-    .text1
+    .main-text
       font-size: 16px
       color: #565e66
-      font-weight: 400
+      font-weight: 300
 
-    .circle
+    .main-graphic-wrapper
+      height: 800px
+      width: 800px
+      // background: pink
       position: relative
-      padding: 120px
+      margin-bottom: 100px
 
-      .centered-text
+    .main-graphic
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translateX(-50%) translateY(-50%)
+      border: solid 1px #d4dbe0
+      border-radius: 100%
+      padding: 90px
+
+
+      .graphic-text
         position: absolute
         top: 50%
         left: 50%
         transform: translate(-50%, -50%)
         color: #fff
+        font-weight: bold
 
-    .circle-item
+    .graphic-items
       position: absolute
       top: 50%
       left: 50%
-      transform: rotate(45deg) translate(12em) rotate(-45deg)
-      width: 80px
-      height: 80px
-      border-radius: 100%
-      // transform: translateY(-50%) translateX(-50%) rotate(-90deg) translateX(40px)
+
+    .graphic-item
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translateY(-50%) translateX(-50%)
+
+      &:nth-child(2) .graphic-item-content
+        transform: rotate(0deg) translateX(320px)
+      &:nth-child(3) .graphic-item-content
+        transform: rotate(30deg) translateX(320px)
+      &:nth-child(4) .graphic-item-content
+        transform: rotate(60deg) translateX(320px)
+      &:nth-child(5) .graphic-item-content
+        transform: rotate(90deg) translateX(320px)
+      &:nth-child(6) .graphic-item-content
+        transform: rotate(120deg) translateX(320px)
+      &:nth-child(7) .graphic-item-content
+        transform: rotate(150deg) translateX(320px)
+      &:nth-child(8) .graphic-item-content
+        transform: rotate(180deg) translateX(320px)
+      &:nth-child(9) .graphic-item-content
+        transform: rotate(210deg) translateX(320px)
+      &:nth-child(10) .graphic-item-content
+        transform: rotate(240deg) translateX(320px)
+      &:nth-child(11) .graphic-item-content
+        transform: rotate(270deg) translateX(320px)
+      &:nth-child(12) .graphic-item-content
+        transform: rotate(300deg) translateX(320px)
+
+
+    .graphic-item-content
       background-color: #f4f7f9
       border: solid 3px #d4dbe0
+      border-radius: 100%
+      transform: rotate(330deg) translateX(320px)
+      width: 80px
+      height: 80px
 
-  .main-2
+
+      img
+        position: absolute
+        right: 0
+        left: 0
+        top: 0
+        bottom: 0
+        margin: auto auto
+
+
+  .footer
     background-image: url("../img/background.jpg")
     width: 100%
     height: 642px
@@ -54,18 +109,19 @@ body
     flex-direction: column
     align-items: center
 
-    .title2
+    .footer-title
       font-family: 'Hind', sans-serif
       font-weight: 600
       color: #fff
       font-size: 36px
-      margin-top: 90px
+      margin-top: 60px
 
-    .text2
+    .footer-text
       font-family: 'Roboto', sans-serif
       color: #fff
       font-size: 18px
       font-weight: 400
+      margin-bottom: 30px
 
       span
         font-weight: 700
@@ -79,9 +135,22 @@ body
         padding-left: 10px
         color: #565e66
         margin: 7.5px
+        border-radius: 10px
+        border: none
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button
+        -webkit-appearance: none
+        margin: 0
       #message
-        width: 945px
+        width: 952px
         height: 124px
+        padding-left: 10px
+        color: #565e66
+        margin: 7.5px
+        border-radius: 10px
+        border: none
+        font-family: 'Roboto', sans-serif
+        padding: 10px
 
     .box
       width: 17px
@@ -95,6 +164,11 @@ body
         color: #35a8e0
         text-decoration: none
 
+    .container
+      display: flex
+      align-items: center
+
+
     .button
       color: #fff
       font: 14px
@@ -104,3 +178,6 @@ body
       display: flex
       align-items: center
       justify-content: center
+      border-radius: 10px
+      font-weight: bold
+      margin-top: 20px

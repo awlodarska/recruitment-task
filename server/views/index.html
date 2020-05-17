@@ -3,20 +3,59 @@
   <head>
     <title>strona</title>
     <link rel="stylesheet" href="../public/styles.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&amp;family=Roboto:ital,wght@0,700;1,400&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&amp;family=Roboto:wght@300;700&amp;display=swap" rel="stylesheet"/>
   </head>
   <body>
-    <div class="main-1">
-      <div class="title1">Obszary naszych kompetencji</div>
-      <div class="text1">Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.</div>
-      <div class="circle"><img src="../img/circle.png"/>
-        <div class="centered-text">POZNAJ NASZE KOMPETENCJE</div>
+    <div class="main">
+      <h1 class="main-title">Obszary naszych kompetencji</h1>
+      <h2 class="main-text">Pomagamy uczyć się na błędach innych. Wspieramy i rekomendujemy wartościowe rozwiązania biznesowe.</h2>
+      <div class="main-graphic-wrapper">
+        <div class="main-graphic"><img src="../img/circle.png"/>
+          <div class="graphic-text">POZNAJ NASZE KOMPETENCJE</div>
+        </div>
+        <div class="graphic-items">     
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/10.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/2.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/3.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/4.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/5.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/6.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/7.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/8.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/9.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/1.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/12.png"/></a></div>
+          </div>
+          <div class="graphic-item">
+            <div class="graphic-item-content"><a href="#"><img src="../img/11.png"/></a></div>
+          </div>
+        </div>
       </div>
-      <div class="circle-item"></div>
     </div>
-    <div class="main-2">
-      <div class="title2">Skontaktuj się z nami</div>
-      <div class="text2">Zadzwoń <span>+48 535 015 835</span> lub wypełnij formularz.</div>
+    <div class="footer">
+      <div class="footer-title">Skontaktuj się z nami</div>
+      <div class="footer-text">Zadzwoń <span>+48 535 015 835</span> lub wypełnij formularz.</div>
       <form>
         <div class="row">
           <input type="text" placeholder="Imię i nazwisko"/>
@@ -25,15 +64,17 @@
         </div>
         <div class="row">
           <input type="text" placeholder="Firma"/>
-          <input type="number" placeholder="Ilość pracowników"/>
+          <input type="number" placeholder="Ilość pracowników" min="0"/>
           <input type="number" placeholder="Roczny dochód firmy" min="0"/>
         </div>
         <div class="row">
-          <input type="text" id="message" placeholder="Wiadomość"/>
+          <textarea id="message" placeholder="Wiadomość"></textarea>
         </div>
       </form>
-      <input type="checkbox"/>
-      <p>Zapoznałem(-łam) się z <a href="#">Polityką prywatności</a> oraz z <a href="#">Zastrzeżeniami prawnymi</a></p>
+      <div class="container">
+        <input type="checkbox"/>
+        <p>Zapoznałem(-łam) się z <a href="#">Polityką prywatności</a> oraz z <a href="#">Zastrzeżeniami prawnymi</a></p>
+      </div>
       <div class="button">WYŚLIJ</div>
     </div>
   </body>
